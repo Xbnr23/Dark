@@ -1,0 +1,258 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+
+    color: #333;
+
+    padding: 20px;
+
+    text-align: right;
+
+}
+
+header {
+
+    background-color: #007bff;
+
+    color: white;
+
+    padding: 10px;
+
+    text-align: center;
+
+}
+/* التنسيقات العامة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* خلفية داكنة */
+    color: #e0e0e0; /* نص فاتح */
+    padding: 20px;
+    text-align: right;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #1f1f1f; /* لون داكن للهيدر */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: #1f1f1f; /* لون داكن للأقسام */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #e0e0e0; /* نص فاتح */
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333; /* حدود داكنة */
+    border-radius: 4px;
+    background-color: #2c2c2c; /* خلفية داكنة للحقول */
+    color: #e0e0e0; /* نص فاتح */
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input:focus, select:focus, button:focus {
+    border-color: #007bff; /* لون حدود عند التركيز */
+    outline: none;
+}
+
+button {
+    background-color: #007bff; /* لون زر أساسي */
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3; /* لون زر عند التمرير */
+}
+
+#subscriptions-list, #alerts-list, #chat-messages {
+    margin-top: 20px;
+}
+
+#totals {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #e0e0e0; /* نص فاتح */
+}
+
+/* تنسيقات قائمة المشتركين */
+.subscription {
+    background-color: #2c2c2c; /* خلفية داكنة للعناصر */
+/* التنسيقات العامة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* خلفية داكنة */
+    color: #e0e0e0; /* نص فاتح */
+    padding: 20px;
+    text-align: right;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #1f1f1f; /* لون داكن للهيدر */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: #1f1f1f; /* لون داكن للأقسام */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #e0e0e0; /* نص فاتح */
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333; /* حدود داكنة */
+    border-radius: 4px;
+    background-color: #2c2c2c; /* خلفية داكنة للحقول */
+    color: #e0e0e0; /* نص فاتح */
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input:focus, select:focus, button:focus {
+    border-color: #007bff; /* لون حدود عند التركيز */
+    outline: none;
+}
+
+button {
+    background-color: #007bff; /* لون زر أساسي */
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3; /* لون زر عند التمرير */
+}
+
+#subscriptions-list, #alerts-list, #chat-messages {
+    margin-top: 20px;
+}
+
+#totals {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #e0e0e0; /* نص فاتح */
+}
+
+/* تنسيقات قائمة المشتركين */
+.subscription {
+    background-color: #2c2c2c; /* خلفية داكنة للعناصر */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #333; /* حدود داكنة */
+}
+
+.subscription p {
+    margin: 5px 0;
+    color: #e0e0e0; /* نص فاتح */
+}
+
+/* تنسيقات التنبيهات */
+#alerts-list p {
+    background-color: #2c2c2c; /* خلفية داكنة للتنبيهات */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #333; /* حدود داكنة */
+    color: #e0e0e0; /* نص فاتح */
+}
+
+/* تنسيقات المحادثات */
+#chat-messages {
+    background-color: #2c2c2c; /* خلفية داكنة للمحادثات */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #333; /* حدود داكنة */
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#chat-messages p {
+    margin: 5px 0;
+    color: #e0e0e0; /* نص فاتح */
+}
+
+/* تنسيقات إضافية للوضع الداكن */
+#search {
+    background-color: #2c2c2c; /* خلفية داكنة لحقل البحث */
+    color: #e0e0e0; /* نص فاتح */
+}
+
+#filter-status {
+    background-color: #2c2c2c; /* خلفية داكنة للفلتر */
+    color: #e0e0e0; /* نص فاتح */
+}
+
+#filter-status {
+    background-color: #2c2c2c; /* خلفية داكنة للفلتر */
+    color: #e0e0e0; /* نص فاتح */
+}
+}
+
+button {
+
+    background-color: #007bff;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background-color: #0056b3;
+
+}
+
+#subscriptions-list, #alerts-list, #chat-messages {
+
+    margin-top: 20px;
+
+}
+
+#totals {
+
+    margin-top: 20px;
+
+    font-weight: bold;
+
+}

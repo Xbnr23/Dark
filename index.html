@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام إدارة الاشتراكات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>نظام إدارة الاشتراكات الشهرية</h1>
+    </header>
+
+    <main>
+        <!-- نموذج تسجيل الاشتراك -->
+        <section id="subscription-form">
+            <h2>تسجيل اشتراك جديد</h2>
+            <form id="add-subscription">
+                <label for="name">الاسم واللقب:</label>
+                <input type="text" id="name" required>
+
+                <label for="phone">رقم الهاتف:</label>
+                <input type="text" id="phone" required>
+
+                <label for="amount">قيمة الاشتراك الشهري:</label>
+                <input type="number" id="amount" required>
+
+                <label for="start-date">تاريخ بداية الاشتراك:</label>
+                <input type="date" id="start-date" required>
+
+                <button type="submit">حفظ الاشتراك</button>
+            </form>
+        </section>
+
+        <!-- لوحة التحكم -->
+        <section id="dashboard">
+            <h2>لوحة التحكم</h2>
+            <div class="filters">
+                <input type="text" id="search" placeholder="ابحث بالاسم أو رقم الهاتف">
+                <select id="filter-status">
+                    <option value="all">جميع الاشتراكات</option>
+                    <option value="active">نشط</option>
+                    <option value="expired">منتهي</option>
+                </select>
+            </div>
+
+            <!-- قائمة المشتركين -->
+            <div id="subscriptions-list"></div>
+
+            <!-- الإجماليات -->
+            <div id="totals">
+                <p>إجمالي المبالغ الشهرية: <span id="monthly-total">0</span> ريال</p>
+                <p>إجمالي المبالغ السنوية: <span id="yearly-total">0</span> ريال</p>
+            </div>
+        </section>
+
+        <!-- نظام التنبيهات -->
+        <section id="alerts">
+            <h2>التنبيهات</h2>
+            <div id="alerts-list"></div>
+        </section>
+
+        <!-- نظام المحادثات -->
+        <section id="chat">
+            <h2>المحادثات الداخلية</h2>
+            <div id="chat-messages"></div>
+            <form id="send-message">
+                <input type="text" id="message" placeholder="اكتب رسالتك...">
+                <button type="submit">إرسال</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
